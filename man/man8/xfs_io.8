@@ -807,8 +807,15 @@ for the full list) is available via the
 .B help
 command.
 .TP
-.BI "flink " path
+.BI "flink [ \-f ]" " path"
 Link the currently open file descriptor into the filesystem namespace.
+.RS 1.0i
+.PD 0
+.TP 0.4i
+.B \-f
+overwrite the target path if it exists (AT_LINK_REPLACE).
+.PD
+.RE
 .TP
 .BR stat " [ " \-v "|" \-r " ]"
 Selected statistics from
